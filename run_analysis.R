@@ -47,7 +47,7 @@ label<-read.table(file.path(filesPath, "activity_labels.txt"))
 dataActivity[,1]<-label[(dataActivity[,1]),2]
 
 #4Appropriately labels the data set with descriptive variable names.
-Data4 <- cbind(dataSubject,dataActivity,dataFeatures)
+Data4 <- cbind(dataSubject,dataActivity,Data2)
 head(Data4)
 #5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
